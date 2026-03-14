@@ -5,8 +5,8 @@ public class Teacher  extends Person{
         super();
     }
 
-    public Teacher(long userId, String code, String documentNumber, String firstname, String lastname, boolean status) {
-        super(userId, code, documentNumber, firstname, lastname, status);
+    public Teacher(long TeacherId, String code, String documentNumber, String firstname, String lastname, boolean status) {
+        super( TeacherId,code, documentNumber, firstname, lastname, status);
 
     }
     @Override

@@ -2,17 +2,19 @@ package co.edu.cesde.ga.models;
 
 import java.time.LocalDate;
 
-public class Student extends Person {
-
+public  class Student extends Person {
+    private long studentId;
     private String birthDate;
 
     public Student() {
         super();
     }
 
-    public Student(long userId, String code, String documentNumber, String firstname, String lastname, boolean status, String birthDate) {
-        super(userId, code, documentNumber, firstname, lastname, status);
+
+    public Student(long studentId, String code, String documentNumber, String firstname, String lastname, boolean status, String birthDate) {
+        super( studentId,code, documentNumber, firstname, lastname, status);
         this.birthDate = birthDate;
+        this.studentId = studentId;
     }
 
     public Student(String birthDate) {
