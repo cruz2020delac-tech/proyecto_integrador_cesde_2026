@@ -34,6 +34,12 @@ public  class Student extends Person {
         return "Student" + super.toString() +
         "birthDate='" + birthDate + '\'';
     }
+
+    public void setStudentId(Long aLong) {
+    }
+
+    public Long getStudentId() {
+    }
 }
 
 
