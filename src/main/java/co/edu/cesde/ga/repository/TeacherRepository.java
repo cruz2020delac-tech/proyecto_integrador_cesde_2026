@@ -9,7 +9,7 @@ public interface TeacherRepository {
     Boolean Update (Teacher teacherUpdate);
     Student finbyId(long TeacherId);
     boolean findbyDocumentNumber(String documentNumber);
-    lis<Teacher> findAll();
+    List<Teacher> findAll();
     Boolean existsbyDocumentNumber(String documentNumber);
     
 

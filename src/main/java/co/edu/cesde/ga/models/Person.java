@@ -1,7 +1,8 @@
 package co.edu.cesde.ga.models;
 
 public abstract  class Person {
-    protected long userId;
+    protected Long userId;
+
     protected String code;
     protected String documentNumber;
     protected String firstname;

@@ -1,8 +1,9 @@
 package co.edu.cesde.ga.models;
 
-import java.time.LocalDate;
+
 
 public  class Student extends Person {
+    public static Object getStatus;
     private long studentId;
     private String birthDate;
 
@@ -21,6 +22,12 @@ public  class Student extends Person {
         this.birthDate = birthDate;
     }
 
+    public  boolean  getStatus() {
+        
+        return status;
+    }
+
+
     public String getBirthDate() {
         return birthDate;
     }
@@ -32,14 +39,18 @@ public  class Student extends Person {
     @Override
     public String toString() {
         return "Student" + super.toString() +
-        "birthDate='" + birthDate + '\'';
+                "birthDate='" + birthDate + '\'';
     }
 
     public void setStudentId(Long aLong) {
     }
 
-    public Long getStudentId() {
+
+    public Object getStudentId() {
+        return null;
     }
+
+    
 }
 
 
